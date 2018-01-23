@@ -12,13 +12,19 @@ namespace MVC_DataExploration.Controllers
         private MyDbContext db = new MyDbContext();
 
         [HttpPost]
-        public ActionResult Create()
+        public ActionResult Create(Customer customer)
         {
-            Customer customer = new Customer();
+    
             db.Customers.Add(customer);
             db.SaveChanges();
-            return View("Index", db.Customers); 
+            return View("Index",db.Customers); 
 
+        }
+
+        [HttpGet]
+        public ActionResult Create()
+        {
+            return View(db.Customers);
         }
     
 
