@@ -19,7 +19,5 @@ namespace MVC_DataExploration.Models
         public string ProductName { get; set; }
         public string ProductDescription { get; set; }
         public Nullable<decimal> UnitPrice { get; set; }
-    
-        public virtual Category Category1 { get; set; }
     }
 }

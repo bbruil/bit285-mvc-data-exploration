@@ -5,9 +5,7 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="523170eafd4444729fd4b079a4d663a4" Name="Diagram1">
-        <EntityTypeShape EntityType="grocertogoModel.Product" Width="1.5" PointX="0.75" PointY="0.75" />
-        <EntityTypeShape EntityType="grocertogoModel.Category" Width="1.5" PointX="0.75" PointY="4.125" />
-        <AssociationConnector Association="grocertogoModel.FK_Product_Category" />
+        <EntityTypeShape EntityType="grocertogoModel.Product" Width="1.5" PointX="3" PointY="3.875" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

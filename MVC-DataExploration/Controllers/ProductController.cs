@@ -11,16 +11,17 @@ namespace MVC_DataExploration.Controllers
     {
         MyDBContext db = new MyDBContext();
         // GET: Product
+        [HttpGet]
         public ActionResult Index()
         {  
-            return View();
+            return View(db.Products);
         }
         [HttpPost]
             public ActionResult Index(Product p)
         {
             db.Products.Add(p);
             db.SaveChanges();
-            return View();
+            return View(db.Products);
 
         }
     }
